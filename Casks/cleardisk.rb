@@ -1,6 +1,6 @@
 cask "cleardisk" do
-  version "1.6.8"
-  sha256 "a86fd4cc6a5407ba60bc36f24180f6a002aae924c3d3a13005e536b27e86bbda"
+  version "1.6.9"
+  sha256 "36c0fff8806f492e4df51071b5ba947c5bf9892cb6c7befe086931b407473f6f"
 
   url "https://github.com/bysiber/cleardisk/releases/download/v#{version}/ClearDisk-v#{version}.dmg"
   name "ClearDisk"
