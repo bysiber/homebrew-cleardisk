@@ -12,10 +12,9 @@ cask "cleardisk" do
 
   app "ClearDisk.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/ClearDisk.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-cr", "{{appdir}}/ClearDisk.app"]
   end
 
   zap trash: [
